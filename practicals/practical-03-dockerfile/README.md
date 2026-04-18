@@ -1,18 +1,26 @@
-# 🚀 DevOps Virtualization and Configuration Management (INT332)
+# 🚀 Practical 03: Dockerfile Implementation
 
-## 📌 Description
-This repository contains all practicals and concepts covered in the DevOps course including Docker, Docker Compose, Maven, Jenkins, and CI/CD pipelines.
+## 📌 Objective
+To create a Docker image using a Dockerfile and run a container successfully.
 
 ---
 
 ## 🛠️ Tools & Technologies Used
 - 🐳 Docker
-- ⚙️ Docker Compose
-- 🔧 Maven
-- 🚀 Jenkins
-- 🔁 GitHub Actions
 - 💻 Git & GitHub
 
 ---
 
-## 📂 Repository Structure
+## 📝 Steps Performed
+1. Created a Dockerfile
+2. Built Docker image using:
+   docker build -t my-first-image .
+3. Ran the container using:
+   docker run my-first-image
+
+---
+
+## 💻 Commands Used
+```bash
+docker build -t my-first-image .
+docker run my-first-image
