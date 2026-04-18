@@ -1,36 +1,20 @@
-# 🚀 Practical 06: GitHub Actions (CI Pipeline)
+name: DevOps CI Pipeline
 
-## 📌 Objective
-To implement Continuous Integration using GitHub Actions.
+on:
+  push:
+    branches:
+      - main
 
----
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-## 🛠️ Tools Used
-- GitHub Actions
-- Git
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
----
+      - name: List files
+        run: ls -la
 
-## 📝 Steps
-1. Created workflow file in .github/workflows
-2. Defined CI pipeline
-3. Triggered on push event
-4. Verified workflow execution
-
----
-
-## 💻 Workflow File
-main.yml
-
----
-
-## 📊 Output
-CI Pipeline executed successfully with green status.
-
----
-
-## 📚 Concepts Covered
-- Continuous Integration
-- Workflow automation
-- GitHub Actions
-- CI pipeline
+      - name: Print message
+        run: echo "CI Pipeline is working successfully!"
