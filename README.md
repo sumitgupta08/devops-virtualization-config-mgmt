@@ -1,1 +1,1 @@
-# devops-virtualization-config-mgmt
+# DevOps Virtualization and Configuration Management 
